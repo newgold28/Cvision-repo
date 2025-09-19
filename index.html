@@ -1,0 +1,1227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C Vision HIK Camera Distributor Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+      .smooth-scroll {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="smooth-scroll">
+    <div class="min-h-screen bg-white">
+      <!-- Header -->
+      <header class="bg-white shadow-sm border-b border-red-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-16">
+            <div class="flex items-center space-x-3">
+              <div class="bg-red-600 p-2 rounded-lg">
+                <i data-lucide="eye" class="h-6 w-6 text-white"></i>
+              </div>
+              <div>
+                <h1 class="text-xl font-bold text-gray-900">C Vision</h1>
+                <p class="text-xs text-gray-600">HIK Camera Solutions</p>
+              </div>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+              <a href="#home" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Home</a>
+              <a href="#products" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Products</a>
+              <a href="#camera-catalog" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Cameras</a>
+              <a href="#about" class="text-gray-700 hover:text-red-600 font-medium transition-colors">About</a>
+              <a href="#services" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Services</a>
+              <a href="#locations" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Locations</a>
+              <a href="#contact" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Contact</a>
+            </nav>
+            <!-- Mobile menu button -->
+            <button class="md:hidden p-2" data-mobile-menu>
+              <i data-lucide="menu" class="h-6 w-6 text-gray-700"></i>
+            </button>
+            <button class="bg-red-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors">
+              Get Quote
+            </button>
+          </div>
+          <!-- Mobile menu -->
+          <div class="md:hidden hidden" data-mobile-menu-content>
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-red-100">
+              <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Home</a>
+              <a href="#products" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Products</a>
+              <a href="#camera-catalog" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Cameras</a>
+              <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">About</a>
+              <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Services</a>
+              <a href="#locations" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Locations</a>
+              <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Contact</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section id="home" class="relative bg-gradient-to-br from-red-900 via-red-800 to-red-700 text-white">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="inline-flex items-center space-x-2 bg-white bg-opacity-10 rounded-full px-4 py-2 mb-6">
+                <i data-lucide="award" class="h-4 w-4"></i>
+                <span class="text-sm font-medium">Authorized HIK Distributor</span>
+              </div>
+              <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-6">
+                Professional <span class="text-white">Security</span> Camera Solutions
+              </h1>
+              <p class="text-xl text-red-100 mb-8 leading-relaxed">
+                C Vision is your trusted partner for HIK camera systems. We deliver cutting-edge surveillance technology with professional installation and ongoing support.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <button class="bg-white text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
+                  Explore Products
+                  <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
+                </button>
+                <button class="border border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition-colors">
+                  Request Consultation
+                </button>
+              </div>
+            </div>
+            <div class="relative">
+              <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
+                <div class="grid grid-cols-2 gap-6">
+                  <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <i data-lucide="camera" class="h-8 w-8 text-red-600"></i>
+                    </div>
+                    <h3 class="font-semibold mb-1">5000+</h3>
+                    <p class="text-sm text-red-200">Cameras Installed</p>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <i data-lucide="users" class="h-8 w-8 text-red-600"></i>
+                    </div>
+                    <h3 class="font-semibold mb-1">800+</h3>
+                    <p class="text-sm text-red-200">Happy Clients</p>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <i data-lucide="shield" class="h-8 w-8 text-red-600"></i>
+                    </div>
+                    <h3 class="font-semibold mb-1">24/7</h3>
+                    <p class="text-sm text-red-200">Support Available</p>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <i data-lucide="award" class="h-8 w-8 text-red-600"></i>
+                    </div>
+                    <h3 class="font-semibold mb-1">15+</h3>
+                    <p class="text-sm text-red-200">Years Experience</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section id="products" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              HIK Camera Product Range
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              From compact dome cameras to advanced NVR systems, we offer the complete HIK Vision lineup for all your security needs.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div class="h-48 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center">
+                <i data-lucide="camera" class="h-20 w-20 text-white"></i>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">IP Dome Cameras</h3>
+                <p class="text-gray-600 mb-4">High-resolution dome cameras with advanced night vision and weather resistance for comprehensive surveillance coverage.</p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    4K Ultra HD Resolution
+                  </li>
+                  <li class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Smart IR Technology
+                  </li>
+                  <li class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    IP67 Weather Protection
+                  </li>
+                </ul>
+                <button class="w-full bg-red-600 text-white py-3 rounded-lg font-medium hover:bg-red-700 transition-colors learn-more-btn" data-product="IP Cameras">
+                  Request Quote
+                </button>
+              </div>
+            </div>
+
+            <div class="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div class="h-48 bg-gradient-to-br from-red-400 to-red-500 flex items-center justify-center">
+                <i data-lucide="shield" class="h-20 w-20 text-white"></i>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">NVR Systems</h3>
+                <p class="text-gray-600 mb-4">Network Video Recorders with advanced storage and management capabilities for seamless security operations.</p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Up to 32 Channel Support
+                  </li>
+                  <li class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    AI-Powered Analytics
+                  </li>
+                  <li class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Cloud Integration
+                  </li>
+                </ul>
+                <button class="w-full bg-red-600 text-white py-3 rounded-lg font-medium hover:bg-red-700 transition-colors learn-more-btn" data-product="NVR Systems">
+                  Request Quote
+                </button>
+              </div>
+            </div>
+
+            <div class="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div class="h-48 bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center">
+                <i data-lucide="eye" class="h-20 w-20 text-white"></i>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">PTZ Cameras</h3>
+                <p class="text-gray-600 mb-4">Pan-Tilt-Zoom cameras with precision control and intelligent tracking for dynamic surveillance needs.</p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    360° Pan Coverage
+                  </li>
+                  <li class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Auto-Tracking Features
+                  </li>
+                  <li class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Powerful Optical Zoom
+                  </li>
+                </ul>
+                <button class="w-full bg-red-600 text-white py-3 rounded-lg font-medium hover:bg-red-700 transition-colors learn-more-btn" data-product="Access Control">
+                  Request Quote
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hikvision Camera Catalog -->
+      <section id="camera-catalog" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Hikvision Network Camera Collection
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Explore our comprehensive range of Hikvision network cameras, featuring the latest in surveillance technology with advanced AI capabilities and superior image quality.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Camera 1: Ds-2cd2t47g2h-li -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center relative">
+              <img src="image/Ds-2cd2t47g2h-li.png" alt=""> 
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">4MP</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CD2T47G2H-LI</h3>
+                <p class="text-sm text-gray-600 mb-4">4MP ColorVu White Light Network Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    4MP Ultra HD (2688 × 1520)
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    ColorVu Tech Supplement Light / Lighting Range: IR up to 25 m, White Light up to 20 m
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Built-in Microphone
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Camera 2: Ds-2ce10kfot-lpfs -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-400 to-red-500 flex items-center justify-center relative">
+                <img class="w-72" src="image/Ds-2ce10kfot-lpfs.png" alt="image">
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">3K</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CE10KF0T-LPFS</h3>
+                <p class="text-sm text-gray-600 mb-4">3K ColorVu Smart Hybrid Light Fixed Mini Bullet Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Min. Illumination: 0.001 Lux @ (F1.0, AGC ON), 0 Lux with white light
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Supplement Light Range: IR: up to 20 m; White Light: up to 20 m
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Camera 3: DS-2CE70K0T-PTLTS -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center relative">
+                <img src="image/DS-2CE70K0T-PTLTS-1.png" alt="">
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">3K</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CE70K0T-PTLTS</h3>
+                <p class="text-sm text-gray-600 mb-4">3K (≈2960×1665) Smart-Hybrid Light Fixed PT Turret Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Minimum Illumination: 0.01 Lux @ (F2.0, AGC ON) — 0 Lux with White Light
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Supplement Light / Lighting Range: IR up to 25 m, White Light up to 20 m
+                  </div>
+                 
+                </div>
+                <div class="flex justify-between items-center">                 
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Camera 4: DS-2CE72DFT-F -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center relative">
+                <img src="image/Ds-2ce72dfot-f.png" alt="">
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">2MP</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CE72DFT-F
+                </h3>
+                <p class="text-sm text-gray-600 mb-4">2 MP ColorVu White Light Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Minimum Illumination: 0.0005 Lux @ (F1.0, AGC ON) — 0 Lux with white light
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    White Light Illuminator Range: up to 20 m
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Camera 5: DS-2CE76D0T-EXIPF -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-400 to-red-500 flex items-center justify-center relative">
+                <img class="w-48" src="image/Ds-2ce76dot-exipf.png" alt="">
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">2MP</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CE76D0T-EXIPF</h3>
+                <p class="text-sm text-gray-600 mb-4">2 MP Color / White Light (EXIR) Turret Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                   Minimum Illumination: 0.02 Lux @ (F1.2, AGC ON) — 0 Lux with IR
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                   Supplement Light Range: IR up to 20 m
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Camera 6: DS-2CE76K0T-LPFS -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center relative">
+                <img class="w-48" src="image/Ds-2ce76kot-lpfs.png" alt="">
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">3k</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CE76K0T-LPFS</h3>
+                <p class="text-sm text-gray-600 mb-4">3K Dual-Light / Smart-Hybrid Light Turret Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Minimum Illumination: 0.01 Lux @ (F1.6, AGC ON) — 0 Lux with IR
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Supplement Light Range: IR up to 20 m, White Light up to 20 m
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl font-bold text-red-600">$279</span>
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Camera 7: DS-2CD2743G2-IZS -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center relative">
+                <img class="w-72" src="image/DS-2CD2743G2-IZS.png" alt="">
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">4MP</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CD2743G2-IZS</h3>
+                <p class="text-sm text-gray-600 mb-4">4MP AcuSense Varifocal Dome Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    2.8-12mm Motorized Lens
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Human & Vehicle Detection
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    IK10 Vandal Resistant
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Camera 8: DS-2CD2387G2-LSU/SL -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-400 to-red-500 flex items-center justify-center relative">
+                <img class="w-48" src="image/DS-2CD2387G2-LSU:SL.png" alt="">
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">8MP</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CD2387G2-LSU/SL</h3>
+                <p class="text-sm text-gray-600 mb-4">8MP ColorVu Fixed Turret Network Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    4K Ultra HD @ 25fps
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Smart Hybrid Light
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Two-way Audio
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Camera 9: DS-2CD2047G2-LU -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center relative">
+                <img src="image/DS-2CD2047G2-LU.png" alt="">
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">4MP</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CD2047G2-LU</h3>
+                <p class="text-sm text-gray-600 mb-4">4MP ColorVu Fixed Turret Network Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    2688×1520 Resolution
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    24/7 Color Imaging
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Water & Dust Resistant
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Camera 10: DS-2CD2T47G2-L -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center relative">
+                <img src="image/DS-2CD2T47G2-L.png" alt="">
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">4MP</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CD2T47G2-L</h3>
+                <p class="text-sm text-gray-600 mb-4">4MP ColorVu Fixed Bullet Network Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    2688×1520 @ 25fps
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Excellent Low-light
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    IP67 Protection
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Camera 11: DS-2CE70KF0T-LPFS -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-400 to-red-500 flex items-center justify-center relative">
+                <img class="w-48" src="image/HikvisionDS-2CE70KF0T-LPFSIndoorSecurityCamera3K2.8mm_Mic_ColorVu_1.png" alt="">
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">3k</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CE70KF0T-LPFS</h3>
+                <p class="text-sm text-gray-600 mb-4">3K ColorVu Smart-Hybrid Light Turret Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                   Minimum Illumination: 0.001 Lux @ (F1.0, AGC ON) — 0 Lux with White Light
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Supplement Light Range: IR up to 20 m, White Light up to 20 m
+                  </div>                  
+                </div>
+                <div class="flex justify-between items-center">
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div> 
+
+            <!-- Camera 12: DS-2CE16D0T-LPXTS -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center relative">
+              <img src="image/hikvision model Ds-2ce16d0t-lpxts.png" alt="">
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">2MP</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CE16D0T-LPXTS</h3>
+                <p class="text-sm text-gray-600 mb-4">2MP Smart-Hybrid Light / White Light Bullet Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Minimum Illumination: 0.01 Lux @ (F1.6, AGC ON) — 0 Lux with White Light
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Supplement Light Range: IR up to 25 m, White Light up to 20 m
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Camera 13: DS-2CD2546G2-IS 
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center relative">
+                <i data-lucide="camera" class="h-16 w-16 text-white"></i>
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">4MP</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CD2546G2-IS</h3>
+                <p class="text-sm text-gray-600 mb-4">4MP AcuSense Fixed Cube Network Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    2688×1520 @ 25fps
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Built-in PIR Detection
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Wi-Fi Connection
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl font-bold text-red-600">$179</span>
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>-->
+
+            <!-- Camera 14: DS-2CD2783G2-IZS 
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-400 to-red-500 flex items-center justify-center relative">
+                <i data-lucide="camera" class="h-16 w-16 text-white"></i>
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">8MP</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CD2783G2-IZS</h3>
+                <p class="text-sm text-gray-600 mb-4">8MP AcuSense Varifocal Dome Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    2.8-12mm Motorized Zoom
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Advanced Analytics
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    IK10 Vandal Proof
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl font-bold text-red-600">$299</span>
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>-->
+
+            <!-- Camera 15: DS-2CD2H87G2-AZS 
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+              <div class="h-48 bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center relative">
+                <i data-lucide="camera" class="h-16 w-16 text-white"></i>
+                <div class="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-3 py-1">
+                  <span class="text-white text-xs font-semibold">8MP</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">DS-2CD2H87G2-AZS</h3>
+                <p class="text-sm text-gray-600 mb-4">8MP AcuSense Varifocal Turret Camera</p>
+                <div class="space-y-2 mb-4">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    2.8-12mm Auto-focus
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    DarkFighter Technology
+                  </div>
+                  <div class="flex items-center text-sm text-gray-600">
+                    <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                    Smart IR up to 60m
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl font-bold text-red-600">$319</span>
+                  <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors text-sm">
+                    Get Quote
+                  </button>
+                </div>
+              </div>      
+            </div>-->
+            
+          </div>
+<div></div>
+          <!-- Call to Action -->
+          <div class="text-center mt-16">
+            <div class="bg-gray-50 rounded-2xl p-8">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Need Help Choosing the Right Camera?</h3>
+              <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+                Our security experts can help you select the perfect Hikvision camera for your specific needs and budget. Get personalized recommendations and professional installation services.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors inline-flex items-center justify-center">
+                  <i data-lucide="phone" class="mr-2 h-5 w-5"></i>
+                  Call for Consultation
+                </button>
+                <button class="border border-red-600 text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                  Download Catalog
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                Your Trusted HIK Vision Partner
+              </h2>
+              <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                C Vision has been at the forefront of security camera distribution for over 15 years. As an authorized HIK Vision distributor, we provide genuine products with full warranty support and professional installation services.
+              </p>
+              <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                Our team of certified technicians ensures that every installation meets the highest standards of quality and performance. From small businesses to large enterprises, we deliver tailored security solutions that protect what matters most.
+              </p>
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div class="flex items-start space-x-3">
+                  <div class="bg-red-100 p-2 rounded-lg">
+                    <i data-lucide="award" class="h-5 w-5 text-red-600"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-gray-900">Certified Distributor</h3>
+                    <p class="text-sm text-gray-600">Official HIK Vision partnership</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="bg-red-100 p-2 rounded-lg">
+                    <i data-lucide="shield" class="h-5 w-5 text-red-600"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-gray-900">Full Warranty</h3>
+                    <p class="text-sm text-gray-600">Complete product coverage</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <div class="bg-gradient-to-br from-red-600 to-red-800 rounded-2xl p-8 text-white">
+                <h3 class="text-2xl font-bold mb-6">Why Choose C Vision?</h3>
+                <div class="space-y-4">
+                  <div class="flex items-center space-x-3">
+                    <i data-lucide="check-circle" class="h-5 w-5 text-white"></i>
+                    <span>15+ years of industry experience</span>
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <i data-lucide="check-circle" class="h-5 w-5 text-white"></i>
+                    <span>Certified installation team</span>
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <i data-lucide="check-circle" class="h-5 w-5 text-white"></i>
+                    <span>24/7 technical support</span>
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <i data-lucide="check-circle" class="h-5 w-5 text-white"></i>
+                    <span>Competitive pricing</span>
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <i data-lucide="check-circle" class="h-5 w-5 text-white"></i>
+                    <span>Complete project management</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Comprehensive Security Solutions
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              From consultation to maintenance, we provide end-to-end security camera services tailored to your specific needs.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center group">
+              <div class="bg-white w-20 h-20 rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 group-hover:shadow-xl transition-shadow">
+                <i data-lucide="users" class="h-10 w-10 text-red-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Consultation</h3>
+              <p class="text-gray-600">Expert security assessment and customized system design for optimal coverage.</p>
+            </div>
+
+            <div class="text-center group">
+              <div class="bg-white w-20 h-20 rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 group-hover:shadow-xl transition-shadow">
+                <i data-lucide="camera" class="h-10 w-10 text-red-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Installation</h3>
+              <p class="text-gray-600">Professional installation by certified technicians with minimal disruption.</p>
+            </div>
+
+            <div class="text-center group">
+              <div class="bg-white w-20 h-20 rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 group-hover:shadow-xl transition-shadow">
+                <i data-lucide="shield" class="h-10 w-10 text-red-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Support</h3>
+              <p class="text-gray-600">24/7 technical support and troubleshooting for uninterrupted security.</p>
+            </div>
+
+            <div class="text-center group">
+              <div class="bg-white w-20 h-20 rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 group-hover:shadow-xl transition-shadow">
+                <i data-lucide="award" class="h-10 w-10 text-red-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Maintenance</h3>
+              <p class="text-gray-600">Regular maintenance and system updates to ensure peak performance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              What Our Clients Say
+            </h2>
+            <p class="text-xl text-gray-600">
+              Trusted by businesses across industries
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-50 rounded-xl p-6">
+              <div class="flex items-center mb-4">
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+              </div>
+              <p class="text-gray-600 mb-4 italic">
+                "C Vision provided exceptional service from consultation to installation. Their HIK cameras have significantly improved our security coverage."
+              </p>
+              <div class="font-semibold text-gray-900">Sarah Johnson</div>
+              <div class="text-sm text-gray-500">Retail Chain Manager</div>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl p-6">
+              <div class="flex items-center mb-4">
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+              </div>
+              <p class="text-gray-600 mb-4 italic">
+                "Professional installation and ongoing support. The system quality is outstanding and the team is always responsive."
+              </p>
+              <div class="font-semibold text-gray-900">Michael Chen</div>
+              <div class="text-sm text-gray-500">Manufacturing Director</div>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl p-6">
+              <div class="flex items-center mb-4">
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+              </div>
+              <p class="text-gray-600 mb-4 italic">
+                "Reliable partner for all our security needs. Their expertise with HIK systems is unmatched in the market."
+              </p>
+              <div class="font-semibold text-gray-900">David Rodriguez</div>
+              <div class="text-sm text-gray-500">Property Manager</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Locations Section -->
+      <section id="locations" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Locations</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Visit our showrooms and service centers across the UAE for personalized consultation and support.</p>
+          </div>
+
+          <!-- Map Container -->
+          <div class="mb-12">
+            <div class="bg-gray-100 rounded-2xl overflow-hidden shadow-lg">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.6828839825!2d54.89782!3d25.0657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-full">
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Location Cards -->
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Headquarters - Dubai -->
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="bg-gradient-to-r from-red-600 to-red-700 p-6 text-white">
+                <div class="flex items-center space-x-3 mb-2">
+                  <i data-lucide="building-2" class="h-6 w-6"></i>
+                  <h3 class="text-xl font-bold">Headquarters</h3>
+                </div>
+                <p class="text-red-100">Main Office & Showroom</p>
+              </div>
+              <div class="p-6">
+                <div class="space-y-4">
+                  <div class="flex items-start space-x-3">
+                    <i data-lucide="map-pin" class="h-5 w-5 text-red-600 mt-1"></i>
+                    <div>
+                      <p class="font-medium text-gray-900">Address</p>
+                      <p class="text-gray-600">Sheikh Zayed Road, Trade Centre<br>Dubai, UAE</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <i data-lucide="phone" class="h-5 w-5 text-red-600 mt-1"></i>
+                    <div>
+                      <p class="font-medium text-gray-900">Phone</p>
+                      <p class="text-gray-600">+971 4 123 4567</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <i data-lucide="clock" class="h-5 w-5 text-red-600 mt-1"></i>
+                    <div>
+                      <p class="font-medium text-gray-900">Hours</p>
+                      <p class="text-gray-600">Sun-Thu: 9AM-6PM<br>Sat: 9AM-2PM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Abu Dhabi Branch -->
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="bg-gradient-to-r from-red-500 to-red-600 p-6 text-white">
+                <div class="flex items-center space-x-3 mb-2">
+                  <i data-lucide="store" class="h-6 w-6"></i>
+                  <h3 class="text-xl font-bold">Abu Dhabi Branch</h3>
+                </div>
+                <p class="text-red-100">Sales & Service Center</p>
+              </div>
+              <div class="p-6">
+                <div class="space-y-4">
+                  <div class="flex items-start space-x-3">
+                    <i data-lucide="map-pin" class="h-5 w-5 text-red-600 mt-1"></i>
+                    <div>
+                      <p class="font-medium text-gray-900">Address</p>
+                      <p class="text-gray-600">Corniche Road, Al Markaziyah<br>Abu Dhabi, UAE</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <i data-lucide="phone" class="h-5 w-5 text-red-600 mt-1"></i>
+                    <div>
+                      <p class="font-medium text-gray-900">Phone</p>
+                      <p class="text-gray-600">+971 2 987 6543</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <i data-lucide="clock" class="h-5 w-5 text-red-600 mt-1"></i>
+                    <div>
+                      <p class="font-medium text-gray-900">Hours</p>
+                      <p class="text-gray-600">Sun-Thu: 9AM-6PM<br>Sat: 9AM-2PM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sharjah Branch -->
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="bg-gradient-to-r from-red-400 to-red-500 p-6 text-white">
+                <div class="flex items-center space-x-3 mb-2">
+                  <i data-lucide="wrench" class="h-6 w-6"></i>
+                  <h3 class="text-xl font-bold">Sharjah Branch</h3>
+                </div>
+                <p class="text-red-100">Technical Support Center</p>
+              </div>
+              <div class="p-6">
+                <div class="space-y-4">
+                  <div class="flex items-start space-x-3">
+                    <i data-lucide="map-pin" class="h-5 w-5 text-red-600 mt-1"></i>
+                    <div>
+                      <p class="font-medium text-gray-900">Address</p>
+                      <p class="text-gray-600">Al Wahda Street, Al Majaz<br>Sharjah, UAE</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <i data-lucide="phone" class="h-5 w-5 text-red-600 mt-1"></i>
+                    <div>
+                      <p class="font-medium text-gray-900">Phone</p>
+                      <p class="text-gray-600">+971 6 555 7890</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <i data-lucide="clock" class="h-5 w-5 text-red-600 mt-1"></i>
+                    <div>
+                      <p class="font-medium text-gray-900">Hours</p>
+                      <p class="text-gray-600">Sun-Thu: 8AM-5PM<br>Sat: 9AM-1PM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact CTA -->
+          <div class="text-center mt-12">
+            <div class="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 text-white">
+              <h3 class="text-2xl font-bold mb-4">Ready to Secure Your Property?</h3>
+              <p class="text-red-100 mb-6 max-w-2xl mx-auto">Visit any of our locations for a free consultation, or contact us to schedule an on-site assessment.</p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  Schedule Visit
+                </button>
+                <button class="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition-colors">
+                  Call for Consultation
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+              Ready to Secure Your Property?
+            </h2>
+            <p class="text-xl text-gray-300">
+              Contact our security experts for a free consultation
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12">
+            <div>
+              <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+              <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                  <div class="bg-red-600 p-3 rounded-lg">
+                    <i data-lucide="phone" class="h-6 w-6 text-white"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold mb-1">Phone</h4>
+                    <p class="text-gray-300">+1 (555) 123-4567</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <div class="bg-red-600 p-3 rounded-lg">
+                    <i data-lucide="mail" class="h-6 w-6 text-white"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold mb-1">Email</h4>
+                    <p class="text-gray-300">info@cvision.com</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <div class="bg-red-600 p-3 rounded-lg">
+                    <i data-lucide="map-pin" class="h-6 w-6 text-white"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold mb-1">Address</h4>
+                    <p class="text-gray-300">123 Security Boulevard<br />Tech City, TC 12345</p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl p-8">
+              <h3 class="text-2xl font-semibold mb-6">Request Quote</h3>
+              <form id="contact-form" class="space-y-4">
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First Name"
+                    class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
+                    required
+                  />
+                </div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone"
+                  class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
+                />
+                <textarea
+                  name="message"
+                  placeholder="Tell us about your security needs"
+                  rows="4"
+                  class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
+                  required
+                ></textarea>
+                <button type="submit" class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors w-full">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div class="grid md:grid-cols-4 gap-8">
+            <div>
+              <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-red-600 p-2 rounded-lg">
+                  <i data-lucide="eye" class="h-6 w-6 text-white"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-white">C Vision</h3>
+                  <p class="text-xs text-gray-400">HIK Camera Solutions</p>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm">
+                Your trusted partner for professional security camera solutions. Authorized HIK Vision distributor with 15+ years of experience.
+              </p>
+            </div>
+            
+            <div>
+              <h4 class="text-white font-semibold mb-4">Products</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li><a href="#" class="hover:text-white transition-colors">IP Dome Cameras</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">PTZ Cameras</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">NVR Systems</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Access Control</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="text-white font-semibold mb-4">Services</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li><a href="#" class="hover:text-white transition-colors">Installation</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Maintenance</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Support</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Consultation</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="text-white font-semibold mb-4">Contact Info</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li>+1 (555) 123-4567</li>
+                <li>info@cvision.com</li>
+                <li>123 Security Boulevard<br />Tech City, TC 12345</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="border-t border-gray-800 pt-8 mt-8 text-center text-sm text-gray-400">
+            <p>&copy; 2025 C Vision. All rights reserved. | Authorized HIK Vision Distributor</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Floating WhatsApp Button -->
+      <a href="https://wa.me/971501234567?text=Hello%20C%20Vision!%20I'm%20interested%20in%20your%20security%20camera%20solutions." 
+         target="_blank"   
+         class="whatsapp-float fixed bottom-6 right-6 bg-red-600 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 group animate-pulse">
+        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.787"/>
+        </svg>
+        <span class="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          Chat with us
+        </span>
+      </a>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
