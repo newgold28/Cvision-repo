@@ -254,9 +254,3 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 )
 
- // Hide loader when page finishes loading
-  document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("loader").classList.add("hidden");
-    document.getElementById("content").classList.remove("hidden");
-  });
-
