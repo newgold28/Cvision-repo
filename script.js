@@ -1,5 +1,6 @@
 // Initialize Lucide icons
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", () => {
+   
   // Add WhatsApp button styles
   const whatsappStyles = `
     .whatsapp-float {
@@ -252,3 +253,4 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 }
 )
+

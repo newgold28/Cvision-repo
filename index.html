@@ -7,6 +7,8 @@
     <title>C Vision HIK Camera Distributor Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
       .smooth-scroll {
         scroll-behavior: smooth;
@@ -16,49 +18,69 @@
   <body class="smooth-scroll">
     <div class="min-h-screen bg-white">
       <!-- Header -->
-      <header class="bg-white shadow-sm border-b border-red-100 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-between items-center h-16">
-            <div class="flex items-center space-x-3">
-              <div class="bg-red-600 p-2 rounded-lg">
-                <i data-lucide="eye" class="h-6 w-6 text-white"></i>
-              </div>
-              <div>
-                <h1 class="text-xl font-bold text-gray-900">C Vision</h1>
-                <p class="text-xs text-gray-600">HIK Camera Solutions</p>
-              </div>
-            </div>
-            <nav class="hidden md:flex space-x-8">
-              <a href="#home" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Home</a>
-              <a href="#products" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Products</a>
-              <a href="#camera-catalog" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Cameras</a>
-              <a href="#about" class="text-gray-700 hover:text-red-600 font-medium transition-colors">About</a>
-              <a href="#services" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Services</a>
-              <a href="#locations" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Locations</a>
-              <a href="#contact" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Contact</a>
-            </nav>
-            <!-- Mobile menu button -->
-            <button class="md:hidden p-2" data-mobile-menu>
-              <i data-lucide="menu" class="h-6 w-6 text-gray-700"></i>
-            </button>
-            <button class="bg-red-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors">
-              Get Quote
-            </button>
-          </div>
-          <!-- Mobile menu -->
-          <div class="md:hidden hidden" data-mobile-menu-content>
-            <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-red-100">
-              <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Home</a>
-              <a href="#products" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Products</a>
-              <a href="#camera-catalog" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Cameras</a>
-              <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">About</a>
-              <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Services</a>
-              <a href="#locations" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Locations</a>
-              <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Contact</a>
-            </div>
-          </div>
+<header class="bg-white shadow-sm border-b border-red-100 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <div class="bg-red-600 p-2 rounded-lg">
+          <i data-lucide="eye" class="h-6 w-6 text-white"></i>
         </div>
-      </header>
+        <div>
+          <h1 class="text-xl font-bold text-gray-900">C Vision</h1>
+          <p class="text-xs text-gray-600">HIK Camera Solutions</p>
+        </div>
+      </div>
+
+      <!-- Desktop Nav (only large screens and up) -->
+      <nav class="hidden lg:flex items-center space-x-8">
+        <a href="#home" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Home</a>
+        <a href="#products" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Products</a>
+        <a href="#camera-catalog" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Cameras</a>
+        <a href="#about" class="text-gray-700 hover:text-red-600 font-medium transition-colors">About</a>
+        <a href="#services" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Services</a>
+        <a href="#locations" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Locations</a>
+        <a href="#contact" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Contact</a>
+        <!-- Button inside nav -->
+        <a
+          href="#quote"
+          class="bg-red-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors"
+        >
+          Get Quote
+        </a>
+      </nav>
+
+      <!-- Mobile & Tablet Menu Button -->
+      <button class="lg:hidden p-2" data-mobile-menu>
+        <i data-lucide="menu" class="h-6 w-6 text-gray-700"></i>
+      </button>
+    </div>
+
+    <!-- Mobile & Tablet Dropdown Menu -->
+    <div class="lg:hidden hidden" data-mobile-menu-content>
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-red-100">
+        <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Home</a>
+        <a href="#products" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Products</a>
+        <a href="#camera-catalog" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Cameras</a>
+        <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">About</a>
+        <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Services</a>
+        <a href="#locations" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Locations</a>
+        <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium transition-colors">Contact</a>
+        <!-- Button inside mobile nav -->
+        <a
+          href="#quote"
+          class="block text-center bg-red-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors"
+        >
+          Get Quote
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
 
       <!-- Hero Section -->
       <section id="home" class="relative bg-gradient-to-br from-red-900 via-red-800 to-red-700 text-white">
@@ -917,16 +939,21 @@
           <div class="mb-12">
             <div class="bg-gray-100 rounded-2xl overflow-hidden shadow-lg">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.6828839825!2d54.89782!3d25.0657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.487424178107!2d3.188987175240466!3d6.459760093531778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b87003106d1ab%3A0x21e11d6eb8f0cbb!2sCvision%20security%20Cameras%20store!5e0!3m2!1sen!2sng!4v1758537146994!5m2!1sen!2sng" 
                 width="100%" 
-                height="400" 
+                height="300" 
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade"
                 class="w-full">
               </iframe>
-            </div>
+  <div class="p-4 text-center">
+    <h4 class="font-semibold text-gray-900">Cvision Security Cameras Store</h4>
+    <p class="text-sm text-gray-600">Lagos, Nigeria</p>
+  </div>
+</div>
+
           </div>
 
           <!-- Location Cards -->
@@ -946,7 +973,7 @@
                     <i data-lucide="map-pin" class="h-5 w-5 text-red-600 mt-1"></i>
                     <div>
                       <p class="font-medium text-gray-900">Address</p>
-                      <p class="text-gray-600">Sheikh Zayed Road, Trade Centre<br>Dubai, UAE</p>
+                      <p class="text-gray-600">Shop B103, Alaba <br>International Market, opposite Union <br>Bank, Ojo, Lagos</p>
                     </div>
                   </div>
                   <div class="flex items-start space-x-3">
@@ -1058,100 +1085,118 @@
         </div>
       </section>
 
-      <!-- Contact Section -->
-      <section id="contact" class="py-20 bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl lg:text-4xl font-bold mb-4">
-              Ready to Secure Your Property?
-            </h2>
-            <p class="text-xl text-gray-300">
-              Contact our security experts for a free consultation
-            </p>
-          </div>
+     <!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+        Ready to Secure Your Property?
+      </h2>
+      <p class="text-xl text-gray-300">
+        Contact our security experts for a free consultation
+      </p>
+    </div>
 
-          <div class="grid lg:grid-cols-2 gap-12">
+    <!-- Grid -->
+    <div class="grid lg:grid-cols-2 gap-12">
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+        <div class="space-y-6">
+          <!-- Phone -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-red-600 p-3 rounded-lg">
+              <i data-lucide="phone" class="h-6 w-6 text-white"></i>
+            </div>
             <div>
-              <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
-              <div class="space-y-6">
-                <div class="flex items-start space-x-4">
-                  <div class="bg-red-600 p-3 rounded-lg">
-                    <i data-lucide="phone" class="h-6 w-6 text-white"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold mb-1">Phone</h4>
-                    <p class="text-gray-300">+1 (555) 123-4567</p>
-                  </div>
-                </div>
-                <div class="flex items-start space-x-4">
-                  <div class="bg-red-600 p-3 rounded-lg">
-                    <i data-lucide="mail" class="h-6 w-6 text-white"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold mb-1">Email</h4>
-                    <p class="text-gray-300">info@cvision.com</p>
-                  </div>
-                </div>
-                <div class="flex items-start space-x-4">
-                  <div class="bg-red-600 p-3 rounded-lg">
-                    <i data-lucide="map-pin" class="h-6 w-6 text-white"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold mb-1">Address</h4>
-                    <p class="text-gray-300">123 Security Boulevard<br />Tech City, TC 12345</p>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-gray-800 rounded-xl p-8">
-              <h3 class="text-2xl font-semibold mb-6">Request Quote</h3>
-              <form id="contact-form" class="space-y-4">
-                <div class="grid sm:grid-cols-2 gap-4">
-                  <input
-                    type="text"
-                    name="firstName"
-                    placeholder="First Name"
-                    class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
-                    required
-                  />
-                  <input
-                    type="text"
-                    name="lastName"
-                    placeholder="Last Name"
-                    class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
-                    required
-                  />
-                </div>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
-                  required
-                />
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone"
-                  class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
-                />
-                <textarea
-                  name="message"
-                  placeholder="Tell us about your security needs"
-                  rows="4"
-                  class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
-                  required
-                ></textarea>
-                <button type="submit" class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors w-full">
-                  Send Message
-                </button>
-              </form>
+              <h4 class="font-semibold mb-1">Phone</h4>
+              <p class="text-gray-300">+1 (555) 123-4567</p>
             </div>
           </div>
-        </div>
-      </section>
+
+          <!-- Email -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-red-600 p-3 rounded-lg">
+              <i data-lucide="mail" class="h-6 w-6 text-white"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-1">Email</h4>
+              <p class="text-gray-300">info@cvision.com</p>
+            </div>
+          </div>
+
+         <!-- Social Media -->
+<div class="flex items-center space-x-4">
+  <a href="https://facebook.com" target="_blank" class="bg-blue-600 p-3 rounded-lg hover:bg-blue-700 transition">
+    <i class="fab fa-facebook-f text-white text-xl"></i>
+  </a>
+  <a href="https://wa.me/15551234567" target="_blank" class="bg-green-500 p-3 rounded-lg hover:bg-green-600 transition">
+    <i class="fab fa-whatsapp text-white text-xl"></i>
+  </a>
+  <a href="https://instagram.com" target="_blank" class="bg-pink-500 p-3 rounded-lg hover:bg-pink-600 transition">
+    <i class="fab fa-instagram text-white text-xl"></i>
+  </a>
+  <a href="https://tiktok.com" target="_blank" class="bg-black p-3 rounded-lg hover:bg-gray-800 transition">
+    <i class="fab fa-tiktok text-white text-xl"></i>
+  </a>
+</div>
+
+
+      <!-- Contact Form -->
+      <div class="bg-gray-800 rounded-xl p-8">
+        <h3 class="text-2xl font-semibold mb-6">Request Quote</h3>
+        <form id="contact-form" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
+              required
+            />
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
+              required
+            />
+          </div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+            class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
+          />
+          <textarea
+            name="message"
+            placeholder="Tell us about your security needs"
+            rows="4"
+            class="bg-gray-700 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors w-full"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
       <!-- Footer -->
       <footer class="bg-gray-900 border-t border-gray-800">
@@ -1220,8 +1265,17 @@
         </span>
       </a>
     </div>
+    
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    lucide.createIcons();
+  });
+</script>
+
+    
   </body>
 </html>
