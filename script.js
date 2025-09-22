@@ -28,7 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
   styleElement.textContent = whatsappStyles;
   document.head.appendChild(styleElement);
   
-  lucide.createIcons();
+  // Initialize Lucide icons
+  if (window.lucide) {
+    lucide.createIcons();
+  }
   
   // Smooth scrolling for navigation links
   const navLinks = document.querySelectorAll('nav a[href^="#"]');
@@ -254,3 +257,11 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 )
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Your other JS (like menu toggle)
+  
+  // Initialize Lucide icons
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+});
