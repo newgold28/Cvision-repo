@@ -15,12 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
   styleElement.textContent = whatsappStyles;
   document.head.appendChild(styleElement);
 
-  // Initialize Lucide icons (only once)
-  if (window.lucide && typeof lucide.createIcons === "function") {
-    lucide.createIcons();
-  } else {
-    console.error("Lucide not loaded!");
+  // 🔥 Ensure Lucide initializes AFTER it’s loaded
+  function initIcons() {
+    if (window.lucide && typeof lucide.createIcons === "function") {
+      lucide.createIcons();
+      console.log("✅ Lucide icons initialized");
+    } else {
+      console.warn("⏳ Lucide not ready, retrying...");
+      setTimeout(initIcons, 100); // keep trying until ready
+    }
   }
+  initIcons();
 
   // Smooth scrolling for nav links
   const navLinks = document.querySelectorAll('nav a[href^="#"]');
@@ -52,5 +57,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // (place other features here: contact form, hover effects, etc.)
+  // (other features like contact form, hover effects, etc.)
 });
