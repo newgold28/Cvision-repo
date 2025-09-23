@@ -16,9 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
   document.head.appendChild(styleElement);
 
   // Initialize Lucide icons
-  if (window.lucide) {
-    lucide.createIcons();
-  }
+  if (window.lucide && typeof lucide.createIcons === "function") {
+  lucide.createIcons();
+} else {
+  console.error("Lucide not loaded!");
+}
+
 
   // Smooth scrolling
   const navLinks = document.querySelectorAll('nav a[href^="#"]');
