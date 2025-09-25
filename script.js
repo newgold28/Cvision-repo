@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function initIcons() {
     if (window.lucide && typeof lucide.createIcons === "function") {
       lucide.createIcons();
-      console.log("✅ Lucide icons initialized");
+      // console.log("✅ Lucide icons initialized");
     } else {
       console.warn("⏳ Lucide not ready, retrying...");
       setTimeout(initIcons, 100); // keep trying until ready
