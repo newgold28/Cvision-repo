@@ -1,7 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Initialize Lucide icons
-  lucide.createIcons();
-  
+  function initIcons() {
+    if (window.lucide && typeof window.lucide.createIcons === "function") {
+      window.lucide.createIcons();
+    } else {
+      setTimeout(initIcons, 100); // retry until Lucide is ready
+    }
+  }
+  initIcons();
+
   // --- Smooth scrolling ---
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", e => {
@@ -27,25 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
       link.addEventListener("click", () => {
         mobileMenu.classList.add("hidden");
       });
-    });
-  }
-
-  // --- Product quote buttons ---
-  document.querySelectorAll('.learn-more-btn').forEach(button => {
-    button.addEventListener('click', function() {
-      const product = this.getAttribute('data-product');
-      alert(`Quote requested for: ${product}`);
-      // You can redirect to contact form or open a modal here
-    });
-  });
-
-  // --- Contact form handling ---
-  const contactForm = document.getElementById('contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you for your message! We will contact you soon.');
-      this.reset();
     });
   }
 });
