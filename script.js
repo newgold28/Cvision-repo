@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // --- Ensure Lucide is ready ---
-  if (window.lucide && typeof window.lucide.createIcons === "function") {
-    window.lucide.createIcons();
+  function initIcons() {
+    if (window.lucide && typeof window.lucide.createIcons === "function") {
+      window.lucide.createIcons();
+    } else {
+      setTimeout(initIcons, 100); // retry until Lucide is ready
+    }
   }
+  initIcons();
 
   // --- Smooth scrolling ---
   document.querySelectorAll('a[href^="#"]').forEach(link => {
