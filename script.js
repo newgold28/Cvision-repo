@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // WhatsApp pulse styles
+  // --- WhatsApp pulse styles ---
   const whatsappStyles = `
     .whatsapp-float {
       animation: whatsapp-pulse 2s infinite;
@@ -15,47 +15,39 @@ document.addEventListener("DOMContentLoaded", () => {
   styleElement.textContent = whatsappStyles;
   document.head.appendChild(styleElement);
 
-  // 🔥 Ensure Lucide initializes AFTER it’s loaded
+  // --- Ensure Lucide is ready ---
   function initIcons() {
-    if (window.lucide && typeof lucide.createIcons === "function") {
-      lucide.createIcons();
-      // console.log("✅ Lucide icons initialized");
+    if (window.lucide && typeof window.lucide.createIcons === "function") {
+      window.lucide.createIcons();
     } else {
-      console.warn("⏳ Lucide not ready, retrying...");
-      setTimeout(initIcons, 100); // keep trying until ready
+      setTimeout(initIcons, 100);
     }
   }
   initIcons();
 
-  // Smooth scrolling for nav links
-  const navLinks = document.querySelectorAll('nav a[href^="#"]');
-  navLinks.forEach(link => {
+  // --- Smooth scrolling ---
+  document.querySelectorAll('nav a[href^="#"]').forEach(link => {
     link.addEventListener("click", e => {
       e.preventDefault();
-      const targetId = link.getAttribute("href");
-      const target = document.querySelector(targetId);
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+      const target = document.querySelector(link.getAttribute("href"));
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
 
-  // Mobile menu toggle
+  // --- Mobile menu toggle ---
   const mobileMenuButton = document.querySelector("[data-mobile-menu]");
   const mobileMenu = document.querySelector("[data-mobile-menu-content]");
+
   if (mobileMenuButton && mobileMenu) {
     mobileMenuButton.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
     });
-  }
 
-  // Close mobile menu on link click
-  const mobileMenuLinks = document.querySelectorAll("[data-mobile-menu-content] a");
-  mobileMenuLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      mobileMenu.classList.add("hidden");
+    // close menu on link click
+    mobileMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
     });
-  });
-
-  // (other features like contact form, hover effects, etc.)
+  }
 });
