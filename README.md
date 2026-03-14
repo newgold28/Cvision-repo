@@ -119,6 +119,6 @@ cvision-website/
 
 ## 👨‍💻 Developer
 
-Built by **Miracle's Creative Hub** — tech-driven marketing & web solutions for Nigerian businesses.
+Built by **LOCAL Booster Digital** — tech-driven marketing & web solutions for Nigerian businesses.
 
 > Have a business that needs a website? Reach out 👇
